@@ -1,6 +1,6 @@
 public class Lychrel {
     public static void main(String[] args) {
-        int numero=4994,inverso,resultado,contador=1;
+        int numero=196,inverso,resultado,contador=1;
         boolean llego =false;
         do {
             inverso = reverse(numero);
@@ -19,8 +19,7 @@ public class Lychrel {
         System.out.println(contador);
     }
     public static int reverse(int numero) {
-        String reverso = String.valueOf(numero);
-        String[] partes = reverso.split("");
+        String[] partes = String.valueOf(numero).split("");
         String arbalap = partes[partes.length - 1];
         for (int i = partes.length - 2; i > -1; i--) {
             arbalap = String.join("", arbalap, partes[i]);
@@ -28,8 +27,7 @@ public class Lychrel {
         return Integer.parseInt(arbalap);
     }
     public static boolean check(int numero) {
-        String capicua = String.valueOf(numero);
-        String[] partes = capicua.split("");
+        String[] partes = String.valueOf(numero).split("");
         int contador=0;
         for (int i = partes.length - 1; i > partes.length/2; i--) {
             if (!partes[i].equals(partes[contador])) {

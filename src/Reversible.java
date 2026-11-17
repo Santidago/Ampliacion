@@ -14,8 +14,7 @@ public class Reversible {
         }
     }
     public static int reverse(int numero){
-        String reverso=String.valueOf(numero);
-        String[] partes =reverso.split("");
+        String[] partes =String.valueOf(numero).split("");
         String arbalap= partes[partes.length-1];
         for(int i = partes.length-2; i>-1; i--){
             arbalap= String.join("",arbalap, partes[i]);
@@ -37,4 +36,3 @@ public class Reversible {
         return true;
     }
 }
-

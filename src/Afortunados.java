@@ -8,7 +8,7 @@ public class Afortunados {
         ArrayList<Integer> lista = new ArrayList<>();
         System.out.println("Inserte un numero mayor a 1");
         afor = lector.nextInt();
-        if (afor < 1) {
+        if (afor < 2) {
             System.out.println("MAYOR de 1");
         } else {
             for (int i = 1; i <= afor; i++)
